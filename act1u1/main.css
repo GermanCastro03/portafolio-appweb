@@ -1,0 +1,216 @@
+body {
+	width: 100%;
+	min-height: 100%;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	background: url("images/titlebg.png") repeat fixed;
+	background-size: cover;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 960px;
+	height: inherit;
+	margin: 0px auto;
+	background: #fff;
+	text-align: center;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 40px 0px 0px 0px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+}
+
+.upper-content {
+	min-height: 100vh;
+	padding-bottom: 200px;
+}
+
+#tagline {
+	display: block;
+	font-family: 'Annie Use Your Telescope', cursive;
+	margin: 5vh auto;
+	text-align: center;
+}
+
+#trailer {
+	width: 960px;
+	height: 540px;
+
+}
+
+.download-widget {
+	margin-top: 30px;
+}
+
+
+.plus-banner {
+	min-height: 100vh;
+}
+
+.plus-banner h2 {
+	margin-top: 126px;
+}
+
+.plus-banner img {
+	display: block;
+}
+
+.banner-divider {
+	position: relative;
+	background: #ffbde1;
+	height: 45px;
+}
+
+.promo-container {
+	height: 428px;
+	margin-top: -40px;
+}
+
+.promo {
+	position: relative;
+	display: block;
+	height: 341px;
+	background: url("images/promo.png") top no-repeat;
+	background-size: contain;
+}
+
+.description-container {
+	position: relative;
+	padding: 20px 0px 200px 20px;
+	min-height: 800px;
+	background: #fff;
+	text-align: left;
+}
+
+.description-container a {
+	color: #bb5599;
+}
+
+.description-container-left {
+	display: inline-block;
+	vertical-align: top;
+	width: 552px;
+	margin-right: 20px;
+}
+
+.description-container-left h2 {
+	margin: 0.5em 0;
+	font-family: 'Lato', sans-serif;
+}
+
+.description-container-left h3 {
+	margin: 0.5em 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.17em;
+}
+
+.description-container-right {
+	float: right;
+	width: 347px;
+}
+
+.description-container-right img {
+	display: block;
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+
+.description-container p {
+	line-height: 1.4;
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.description-container hr {
+	margin: 1em 0;
+	border: 0;
+	height: 1px;
+	background: #dadada;
+}
+
+.description-container ul {
+	line-height: 1.4;
+	padding-left: 2.0em;
+}
+
+.footer {
+	background: #222;
+	height: 44px;
+}
+
+.footer-content {
+	width: 960px;
+	height: 36px;
+	margin: auto;
+	color: #fff;
+    padding: 4px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content > * {
+    height: 100%;
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.footer-content img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.footer-content p {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	letter-spacing: 2px;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    text-align: right;
+}
+
+.sticker-container {
+	position: absolute;
+	bottom: 60px;
+	margin: 0px 60px;
+}
+
+.sticker-container.left {
+	left: 0px;
+}
+
+.sticker-container.right {
+	right: 0px;
+}
+
+.sticker {
+	display: inline-block;
+	position: relative;
+}
+
+.sticker img {
+	position: relative;
+	margin: 0px 20px;
+}
+
