@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Roux Academy Conference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="ra"><img src="images/ralogo_monogram.png" alt="Roux Academy Logo"></div>
+                <div class="tagline">Roux Academy <br> Art * Media * Design</div>
+            </div>
+            <div class="conference-info">
+                <h1>Roux Academy 2016 Art Conference</h1>
+                <p>Join over 500 hundred of the most creative and brilliant minds of art colleges all around the world for five days of lectures by world-renowned art scholars and artists, and seven days and nights of gallery exhibits featuring the best in contemporary art, including painting, sculpture, and more, in the beautiful halls of Hotel Contempo in the heart of Seattle.</p>
+            </div>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="artists.html">ARTIST</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="venue.html">VENUE/TRAVEL</a></li>
+                <li><a href="register.html" class="active">REGISTER</a></li>
+            </ul>
+        </nav>
+        
+        <div class="banner">
+            <img src="images/art01.jpg" alt="Abstract art banner">
+        </div>
+
+        <div class="main-content">
+            <section class="content-section">
+                <h2>Register</h2>
+                <p>To attend the Roux Academy 2016 Contemporary Art Conference, please complete the information below.</p>
+                
+                <form>
+                    <h3>Personal Info</h3>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Last, First" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Requestion Type</label>
+                        <input type="radio" id="question" name="request_type" value="question">
+                        <label for="question">Question</label><br>
+                        <input type="radio" id="comment" name="request_type" value="comment">
+                        <label for="comment">Comment</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment_text">Comment</label>
+                        <textarea id="comment_text" name="comment_text"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        <label for="subscribe">Subscribe to our mailing list?</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="how_heard">How did you hear about us?</label>
+                        <select id="how_heard" name="how_heard">
+                            <option value="">Choose...</option>
+                            <option value="friend">A Friend</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="twitter">Twitter</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <aside>
+            <div class="widget">
+                <h2>Featured Artists</h2>
+                <p>Each year, nine individuals are honored as Featured Artists - each being granted
+his or her own exhibit hall to display entire collections or themed pieces. Each
+Featured Artist has an opportunity to speak at the conference to share his or her
+vision, perspective, and techniques with conference attendees.</p>
+                <div class="artist-thumbs">
+                    <img src="images/artists/Barot_Bellingham_tn.jpg" alt="Artist thumbnail">
+                    <img src="images/artists/Constance_Smith_tn.jpg" alt="Artist thumbnail">
+                    <img src="images/artists/Hassum_Harrod_tn.jpg" alt="Artist thumbnail">
+                    <img src="images/artists/Hillary_Goldwynn_tn.jpg" alt="Artist thumbnail">
+                    <img src="images/artists/Jennifer_Jerome_tn.jpg" alt="Artist thumbnail">
+                    <img src="images/artists/Jonathan_Ferrar_tn.jpg" alt="Artist thumbnail">
+                    <img src="images/artists/LaVonne_LaRue_tn.jpg" alt="Artist thumbnail">
+                    <img src="images/artists/Riley_Rewington_tn.jpg" alt="Artist thumbnail">
+                    <img src="images/artists/Xhou_Ta_tn.jpg" alt="Artist thumbnail">
+                </div>
+                <p><a href="artists.html">Artist Info>></a></p>
+            </div>
+        </aside>
+
+        <footer>
+            <div class="footer-logo"><img src="images/ralogo_monogram.png" alt="Roux Academy Logo" width="60" height="40"></div>
+            <div class="footer-text">
+                <p>Join over 500 hundred of the most creative and brilliant minds of art colleges all around the world for three days of lectures by world-renowned art scholars and artists.</p>
+            </div>
+            <div class="footer-nav">
+                <p>About the Roux Academy | Privacy Policy | Visit Our Website</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

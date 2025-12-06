@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App (Sin BD)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div id="login-screen" class="auth-container">
+        <h2>Iniciar Sesión</h2>
+        <div id="login-error" class="alert alert-error" style="display:none;"></div>
+        
+        <div class="form-group">
+            <label>Usuario:</label>
+            <input type="text" id="login-username" placeholder="Tu nombre de usuario">
+        </div>
+        <div class="form-group">
+            <label>Contraseña:</label>
+            <input type="password" id="login-password" placeholder="Tu contraseña">
+        </div>
+        <button id="btn-login" class="btn-primary">Entrar</button>
+        <p class="auth-link">
+            ¿No tienes cuenta? <a href="#" id="link-to-register">Regístrate aquí</a>
+        </p>
+    </div>
+
+    <div id="register-screen" class="auth-container" style="display:none;">
+        <h2>Crear Cuenta</h2>
+        <div id="register-error" class="alert alert-error" style="display:none;"></div>
+        <div id="register-success" class="alert alert-success" style="display:none;"></div>
+        
+        <div class="form-group">
+            <label>Nombre de usuario:</label>
+            <input type="text" id="reg-username" placeholder="Tu nombre de usuario">
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" id="reg-email" placeholder="tu@email.com">
+        </div>
+        <div class="form-group">
+            <label>Contraseña:</label>
+            <input type="password" id="reg-password" placeholder="Mínimo 6 caracteres">
+        </div>
+        <button id="btn-register" class="btn-primary">Registrarse</button>
+        <p class="auth-link">
+            ¿Ya tienes cuenta? <a href="#" id="link-to-login">Inicia sesión aquí</a>
+        </p>
+    </div>
+
+    <div id="chat-app" class="chat-app" style="display:none;">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>Hola, <span id="current-username-display"></span></h3>
+                <button id="btn-logout" class="btn-logout">Salir</button>
+            </div>
+            
+            <div class="sidebar-section">
+                <h4>Chat Global</h4>
+                <div class="chat-item active" data-type="global" data-id="0">
+                    <span>🌍 Chat Global</span>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h4>Usuarios</h4>
+                <div id="user-list" class="user-list">
+                    </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h4>
+                    Grupos
+                    <button id="btn-create-group-modal" class="btn-small">+ Crear</button>
+                </h4>
+                <div id="group-list" class="group-list">
+                    </div>
+            </div>
+        </div>
+        
+        <div class="chat-main">
+            <div class="chat-header">
+                <h3 id="chat-title">Chat Global</h3>
+            </div>
+            
+            <div id="chat-messages"></div>
+            
+            <div class="chat-input">
+                <input type="text" id="msg" placeholder="Escribe tu mensaje..." autocomplete="off">
+                <button id="send">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-create-group" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Crear Grupo</h3>
+            <input type="text" id="group-name" placeholder="Nombre del grupo">
+            <button id="create-group-btn">Crear Grupo</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

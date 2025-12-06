@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Actividad 5</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <h1>Panel de Control (Perfil: Administrador)</h1>
+        <div class="user-info">Hola, Admin</div>
+    </header>
+
+    <main class="dashboard-grid">
+        
+        <section class="card grafica-section">
+            <h2>Gráfica de Ventas (Actualización Asíncrona)</h2>
+            <div class="chart-container">
+                <canvas id="graficoVentas"></canvas>
+            </div>
+            <p class="last-update">Última actualización: <span id="ventas-timestamp">--</span></p>
+        </section>
+
+        <section class="card grafica-section">
+            <h2>Gráfica de Rendimiento de Empleados</h2>
+            <div class="chart-container">
+                <canvas id="graficoRendimiento"></canvas>
+            </div>
+            <p class="last-update">Última actualización: <span id="rendimiento-timestamp">--</span></p>
+        </section>
+
+        <section class="card chat-section">
+            <h2>Chat Interno</h2>
+            <div class="chat-window">
+                <div class="chat-messages" id="chat-messages">
+                    </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
+                    <button onclick="enviarMensaje()">Enviar</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="graficosDinamicos.js"></script>
+    <script src="chatSimple.js"></script>
+</body>
+</html>
